@@ -1,0 +1,89 @@
+body {
+    background: lightblue;
+}
+
+.contact-us {
+    color: darkgoldenrod;
+}
+
+.submit-button {
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(89, 150, 255);
+
+    /*transform: translate(20px, 10px); X, Y*/
+
+    /* transform: scale(2.5); gets bigger*/
+
+    /* transform: rotate(-45deg); change the rotation*/
+
+    /*transform: skewY(-45deg); skewY or swekX*/
+
+    transform: matrix(1, 0.45, 0.45, 1, 100, 50); /*scaleX, skewY, skewX, scaleY*//*0.45: this is 45 degrees*/
+
+
+    -webkit-transition: all 500ms ease;/*-webkit-: prefix used for browser support*/
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+
+    
+
+}
+
+.submit-button:hover {
+    background: rgb(147, 187, 255);
+
+    padding: 20px 30px;
+    
+}
+
+#about-me {
+/*
+    animation-name: red-to-black;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite; how many times you want it to happen
+    animation-direction: alternate;
+    */
+
+    /*Shorthand*/
+
+   /* animation: red-to-black 4s linear 0s 2 alternate-reverse; name, duration, speed, delay, iteration-count, direction */
+
+   -webkit-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+   -moz-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+   -o-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+   -ms-animation: red-to-black 4s linear 0s 2 alternate-reverse;
+
+}
+
+/*ANIMATIONS: */
+
+@keyframes red-to-black {
+
+    0% {
+        background: red; 
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        background: yellow; 
+        transform: translate(10px, 10px);
+    }
+
+    100% {
+        background: black; 
+        transform: translate(20px, 20px);
+    }
+
+    /*from {background: red;}
+    to {background: black;}*/
+}

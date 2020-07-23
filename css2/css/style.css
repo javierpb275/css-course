@@ -1,0 +1,37 @@
+
+
+body {
+    /*background: rgb(202, 153, 80);*/
+    /*background: url("../img/clouds-image-css.png");*/
+    /*background-image: url("../img/clouds-image-css.png");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    /*height: 400px;
+    width: 70%;*/
+
+
+    /*GRADIENT*/
+   /* background: linear-gradient(to right, green, red, steelblue, blue);*/
+     /* background: linear-gradient(to right, rgb(151, 223, 92), rgba(197, 19, 34, 0.7));/*right, left, top, bottom, bottm right, etc.*/
+
+    /* background: linear-gradient(-90deg, rgb(151, 223, 92), rgba(197, 19, 34, 0.7));*/
+
+    background: radial-gradient( circle, rgb 20% (151, 223, 92), rgba 40% (197, 19, 34, 0.7));
+
+}
+
+#service-image{
+    height: 400px;
+    width: 70%;
+    background: radial-gradient( circle, rgb 20% (151, 223, 92), rgba 40% (197, 19, 34, 0.7));
+
+}
+#title {
+    color: rgba(197, 19, 34, 0.7);/*a: Transparency or Opacity (Alpha). 0 - 1*/
+}
+
+.subtitle {
+    color: rgba(45, 88, 168, 9);
+}
+
+

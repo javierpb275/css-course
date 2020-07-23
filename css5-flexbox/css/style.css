@@ -1,0 +1,43 @@
+body {
+    background: lightblue;
+}
+
+.container {
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 300px;
+
+    display: flex; /*creates a flex container*/
+
+    flex-direction: row;/*the default*/
+    
+    /*flex-direction: column; row or column*/
+    /*flex-direction: row-reverse; it reverses the order of the items. We can do the same thing with column-reverse*/
+
+    flex-wrap: wrap;/*If the items don't fit on the container, it moves the items that don't fit to a new row*/
+    /*flex-wrap: wrap-reverse; you can also use reverse with wrap*/
+    /* flex-wrap: nowrap; This is the default value*/
+    
+    /*justify-content: flex-end; flex-end, flex-start, center. It aligns horizontally*/
+    /*justify-content: space-between; it creates equal divisions. equally divided from each other on the same row;*/
+    justify-content: space-around; /*it creates spaces on all sides of the item*/
+
+    /* 
+    space-around: if you want a centered kind of item or a centered flex box
+    space-between: if you wanted sth stretched out.
+    */
+
+    align-items: center;/*flex-start, flex-end, center. It aligns vertically*/
+    /*align-items: stretch; default value. it aligns all the way through from top to bottom*/
+    /*align-items: baseline; all the items, no matter their size, are aligned to a baseline*/
+}
+
+.container-item {
+    background: rgb(36, 130, 39);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width:70px;
+    line-height: 50px;
+    margin: 10px;
+}

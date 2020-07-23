@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FLEXBOX</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+  <body>
+      <h1 id="title">FLEXBOX PRACTICE</h1>
+    <div class="container">
+      <div class="container-item" style= "order: 3; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">A</div><!--we can change the order of the items by adding style="order: 3"-->
+      <div class="container-item" style= "order: 8; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">B</div><!--flex-basis: it defines the minimum width of a flex item (set the initial length)-->
+      <div class="container-item" style= "order: 9; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">C</div><!--flex-grow: every flex-item is gonna get the same amount of extra space-->
+      <div class="container-item" style= "order: 1; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">D</div><!--flex-shrink: shrink each item at the same rate as all the other items-->
+      <div class="container-item" style= "order: 2; flex: 1, 1, 100;">E</div><!--flex: grow, shrink, basis-->
+      <div class="container-item" style= "order: 5; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">F</div>
+      <div class="container-item" style= "order: 7; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">G</div>
+      <div class="container-item" style= "order: 6; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">H</div>
+      <div class="container-item" style= "order: 10; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">I</div>
+      <div class="container-item" style= "order: 4; flex-grow: 1; flex-shrink: 1; flex-basis: 100px;">J</div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="container-item" style= "align-self: flex-start;">A</div>
+      <div class="container-item" style= "align-self: center;">B</div>
+      <div class="container-item" style= "align-self: flex-end;">C</div>
+      <div class="container-item" style= "align-self: center;">D</div>
+      <div class="container-item" style= "align-self: flex-start;">E</div>
+    </div>
+     
+  </body>
+</html>

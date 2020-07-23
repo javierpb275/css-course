@@ -1,0 +1,54 @@
+body {
+    background: lightblue;
+}
+
+.grid-container {
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 300px;
+
+    display: grid;
+    /*grid-template-columns: 10px 50px 10px; We're setting up to having 3 columns because we've passed in 3 values*/
+    /*grid-template-rows:  50px 250px; we especify the rows*/
+    grid-template-columns: auto auto auto;/*auto divides the space evenly between the 3, no matter the size*/
+    grid-template-rows:  auto auto;
+   /* grid-column-gap: 150px;
+    grid-row-gap: 300px;*/
+    /*grid-gap: 300px 150px;row, column*/
+    /*justify-content: space-around; center, end, start, space-evenly, space-around, space-between*/
+    /*align-content: space-evenly; space-evenly, space-around, space-between, center, end, start*/
+}
+
+.grid-item {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+.grid-container2 {
+    background-color: rgb(250, 250, 250);
+    margin: 10px;
+    height: 300px;
+
+    display: grid;
+    
+    grid-template-columns: auto auto auto;/*auto divides the space evenly between the 3, no matter the size*/
+    grid-template-rows:  auto auto;
+
+
+}
+
+.grid-item2 {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+

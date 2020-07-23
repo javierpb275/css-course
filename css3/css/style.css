@@ -1,0 +1,40 @@
+body {
+    /*font-size: 2mm;*/
+    font-size: 2em;/*em: double everything based on the font-size*/
+    /*text-transform: uppercase;*/
+    /*text-transform: lowercase;*/
+    /*text-align: center;*/
+    text-align: justify;
+    /*font-family: "Times New Roman", Arial, Helvetica, sans-serif;*/
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+#title{
+    color: red;
+    font-weight: 400;
+    font-family: 'Piedra', cursive;
+    
+}
+
+.italics {
+    font-style: oblique;/*A little bit more italized*/
+    /*font-style: italic;*/
+}
+
+#service-image {
+    /*height: 400px;*/
+    /*height: 400pc;*/
+    /*height: 400pt;*/
+    /*width: 70%;*/
+    height: 400vh;/*vh: view height. 1 vh is equal to 1 percent of the total body height. This is not based on the parent element. It is based on the total viewport.*/
+    width: 70vw; /*vw: view width. 1 vw is equal to 1 percent of the total body width. This is not based on the parent element. It is based on the total viewport.*/
+    
+}
+
+.link {
+    text-decoration: none;
+    /*text-decoration: line-through;
+    text-decoration: underline;
+    text-decoration: overline;*/
+}

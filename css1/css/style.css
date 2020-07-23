@@ -1,0 +1,95 @@
+/*Specifity in Selectors: id# overrides the class. and the class. overrides the tag (ex:  h2)*/
+/*headers (h1) are the least specific. The class is above header. And then the id#. And above everything the inline styling*/
+
+.whatever {/*in order to access a class we do "." before the name of the class*/
+    font-weight: bold;
+}
+
+#hello {/*in order to access an id we do "#" before the name of the id*/
+    font-weight: bold;
+    color: red;
+}
+
+
+h3 + p {/*Select any p that is after a h3*/
+    color: pink;
+}
+
+/*The general sibling combinator or selector. I wanna style every button that is followed by a textarea*/
+/*I wanna style every button that is followed by a textarea. Except, in this case, they have to share the same parent*/
+textarea ~ button {
+    color: brown;
+}
+
+/*Child Selector. Every single child of a certain element. This one is only applied to the direct child*/
+.ul > .li {
+    color: blue;
+}
+
+/*Descendant Selector. It does the same thing as the child selector, but this one selects also the elements inside the li.
+ul li {
+
+}
+
+*/
+
+/*PseudoSelectors:*/
+
+.paragraph:hover {
+    font-size: larger;
+
+}
+
+li:first-child {
+    color: green;
+}
+
+li:last-child {
+    color: purple;
+}
+
+/*With nth-child() you can select an specific one of all the li elements that exist.*/
+li:nth-child(2) {
+    color: rgb(128, 119, 0);
+}
+/*-------------*/
+
+li:only-child {
+    color: red;
+}
+
+/*This is the link before you have clicked*/
+#google-link:link {
+    color: blue;
+
+}
+
+/*This is the link after you have clicked*/
+#google-link:visited {
+    color: red;
+}
+
+/*Attribute Selectors: We can select certain things, based on their attributes*/
+
+h4[class=attribute-selector] {
+    color: darkgreen;
+}
+
+img[src^="../img/"] {/*Select all images that start with this piece of information. If you change ^ into $, it's gonna be the end of the piece of information. And the * means anywhere*/
+    border: 7px solid black;
+
+}
+
+/*White Space Attribute Selector*/
+
+h1[class~=white-space] {
+    background-color: green;
+}
+
+/*Find every h1 where the class is either equal to directly last-one or last-one with a dash*/
+
+h1[class|=last-one] {
+    background-color: blue;
+}
+
+
